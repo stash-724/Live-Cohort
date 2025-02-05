@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+.container{
+    background: #E0E0E0;
+}
+.head{
+    padding: 20px 0px;
+}
+.header{
+    background: #3296D7;
+    color: black;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+h1, h2, h3{
+    color: #324659;
+}
+.pho{
+    text-align: center;
+}
+img{
+    border-radius: 10px;
+}
+.blog{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 2px;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+.rule{
+    border: 1px dashed #E0E0E0;
+}
+.footer{
+    margin-top: 20px;
+    background-color: #323232;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
