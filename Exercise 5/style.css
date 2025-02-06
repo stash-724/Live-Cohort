@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F0F5FA;
+}
+
+.main {
+    width: 400px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.main:hover {
+    transform: scale(1.05); 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; 
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+    outline: none; 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+input[type="submit"]:active {
+    background-color: #388e3c; 
+    transform: scale(1); 
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input[type="tel"]:valid, input[type="email"]:valid {
+    border-color: #4CAF50; 
+}
+
+input[type="tel"]:invalid, input[type="email"]:invalid {
+    border-color: #F44336; 
+}
+
+input[type="tel"]:focus:invalid, input[type="email"]:focus:invalid {
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.6); 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="submit"]:hover {
+    animation: pulse 1s infinite; 
+}
