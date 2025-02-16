@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+nav .items {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+nav .items img {
+  width: 1rem;
+}
+nav .items button {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.view-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.view-1 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-1 .top h1 {
+  font-size: 2rem;
+}
+.view-1 .top h1 span {
+  opacity: 0.6;
+}
+.view-1 .top button {
+  display: none;
+}
+.view-1 .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.view-1 .bottom .images {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
+}
+.view-1 .bottom .images img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.view-1 .bottom .images .a {
+  grid-area: a;
+  align-self: stretch;
+}
+.view-1 .bottom .images .b {
+  grid-area: b;
+  aspect-ratio: 2/1.8;
+}
+.view-1 .bottom .images .c {
+  grid-area: c;
+  aspect-ratio: 2/1.2;
+}
+.view-1 button {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+}
+.view-1 .map {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 88vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0rem 3rem;
+  }
+  nav {
+    padding: 2rem 0rem;
+  }
+  nav .items img {
+    display: none;
+  }
+  .view-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+  }
+  .view-1 .top {
+    width: 45%;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .view-1 .top h1 {
+    font-size: 5rem;
+  }
+  .view-1 .top button {
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .view-1 .bottom {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .view-1 .bottom .images {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  }
+  .view-1 .bottom .images img {
+    width: 90%;
+    border-radius: 2rem;
+    align-self: stretch;
+  }
+  .view-1 .bottom .images .a {
+    grid-area: a;
+  }
+  .view-1 .bottom .images .b {
+    grid-area: b;
+    aspect-ratio: 2/2.5;
+  }
+  .view-1 .bottom .images .c {
+    grid-area: c;
+    aspect-ratio: 2/1.8;
+  }
+  .view-1 button {
+    display: none;
+  }
+  .view-1 .map {
+    position: absolute;
+    top: 6vw;
+    right: 0rem;
+    width: 65vw;
+    height: 50vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+    -o-object-position: left center;
+       object-position: left center;
+  }
+}/*# sourceMappingURL=styles.css.map */
